@@ -1,9 +1,11 @@
-$fonts-text: Tahoma, Helvetica, Arial, sans-serif;
-$font-headings: "Times New Roman", serif;
-$asphalt: #34495e;
-$clouds: #ecf0f1;
+$fonts-text: "Libre Franklin", sans-serif;
+$font-headings: "Noto Serif", serif;
+$fonts-menu: Cantarell, sans-serif;
+$white: #FFFFFF;
+$text-color: #58595B;
+$accent-color: #CEAB2C;
 // Setting a default vlaue, this can be overwritten anywhere in our scss.
 $text-font-size: 18px !default;
 /* Setting a variable, we will use this variable with interpolation.
  Meaning in combination with other information. */
-$nav-border-side: right;
+$nav-border-side: left;
