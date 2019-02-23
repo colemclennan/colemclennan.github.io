@@ -1,9 +1,10 @@
 @import 'variables';
 
 body{
+  $text-font-size: 14px;
   font-family: $fonts-text;
   background-color: $white;
-  color: $white;
+  color: $text-color;
   font-size: $text-font-size;
 }
 h1, h2, h3, h4, h5, h6{
@@ -42,9 +43,26 @@ nav{
   min-width: auto;
 }
 .fadingLine {
-  margin: 25px 0;
+  margin: 15px 0;
     height: 1.5px;
     border: 0;
     background: $accent-color;
     background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, $accent-color));
+}
+.aboutHeader{
+  padding-bottom: 10px;
+  text-align: center;
+}
+.aboutPhoto {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+.About p {
+  text-indent: 20px;
+  padding-top: 10px;
+  margin: auto;
+  width: 90%;
 }
