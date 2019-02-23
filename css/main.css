@@ -28,3 +28,14 @@ nav {
       nav ul li a:hover, nav ul li a:focus {
         color: #FFFFFF;
         background-color: #58595B; }
+
+#carouselExampleFade {
+  max-height: 768px;
+  min-width: auto; }
+
+.fadingLine {
+  margin: 25px 0;
+  height: 1.5px;
+  border: 0;
+  background: #CEAB2C;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, #CEAB2C)); }
