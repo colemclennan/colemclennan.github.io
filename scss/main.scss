@@ -1,4 +1,5 @@
 @import 'variables';
+<<<<<<< HEAD
 /*
   Defining a mixin to add a feel of depth to the elements
   We are setting a default value of the $height to high using $height:high
@@ -19,37 +20,68 @@ body{
   font-family: $fonts-text;
   background-color: $asphalt;
   color: $clouds;
+=======
+
+body{
+  $text-font-size: 14px;
+  font-family: $fonts-text;
+  background-color: $white;
+  color: $text-color;
+>>>>>>> develop
   font-size: $text-font-size;
 }
 h1, h2, h3, h4, h5, h6{
   font-family: $font-headings;
+<<<<<<< HEAD
+=======
+  color: $text-color;
+>>>>>>> develop
 }
 nav{
   // Setting a local value for the variable. This will overite the value for the !default but only inside this declaration
   $text-font-size: 20px;
+<<<<<<< HEAD
   font-size: $text-font-size;
   background-color: $clouds;
+=======
+  font-family: $fonts-menu;
+  font-size: $text-font-size;
+  background-color: $white;
+>>>>>>> develop
   ul{
     li{
       display: inline-block;
       a{
         display: block;
         padding: 20px;
+<<<<<<< HEAD
         color: $asphalt;
+=======
+        color: $text-color;
+>>>>>>> develop
         /*
           Using variable interpolation.
           Adding border- in front of the variable which compiles to border-radius
         */
+<<<<<<< HEAD
         border-#{$nav-border-side}: 1px solid $asphalt;
         transition: all 300ms ease-in-out;
         &:hover, &:focus{
           color: $clouds;
           background-color: $asphalt;
+=======
+        // border-bottom: 1px solid $text-color;
+        transition: all 300ms ease-in-out;
+        &:hover, &:focus{
+          color: $white;
+          background-color: $text-color;
+>>>>>>> develop
         }
       }
     }
   }
 }
+<<<<<<< HEAD
 // defining the base styles shared by all shapes
 .shape{
   display: inline-block;
@@ -73,4 +105,138 @@ nav{
 .shape3{
   @extend .shape;
   @include liftUp(highest);
+=======
+#carouselExampleFade {
+  max-height: 768px;
+  min-width: auto;
+}
+.fadingLine {
+  margin: 15px 0;
+    height: 1.5px;
+    border: 0;
+    background: $accent-color;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, $accent-color));
+}
+.aboutHeader {
+  padding-bottom: 10px;
+  text-align: center;
+}
+.aboutPhoto {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+.About p {
+  text-indent: 20px;
+  padding-top: 10px;
+  margin: auto;
+  width: 90%;
+}
+.galleryHeader {
+  padding-bottom: 10px;
+  text-align: center;
+}
+.gallery img {
+  width: 80%;
+  margin-left:10%;
+  margin-bottom:2px;
+  &.galleryImage6 {
+    width: 39%;
+    margin-right: 0.5%;
+  }
+  &.galleryImage7 {
+    width: 39%;
+    margin-left: 0.5%;
+  }
+}
+.galleryImage4, .galleryImage5 {
+  display: none;
+}
+
+.galleryButton {
+  text-align: center;
+}
+.gallerySeeMore {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.engagementPackage img {
+  width: 13%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.engagementPackage h5 {
+  text-align: center;
+}
+.engagementPackage p {
+  width: 80%;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contactInfo {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contactFormLeft, .contactFormRight h5 {
+  text-align: center;
+}
+input, textarea{
+  display: block;
+  padding-left: 5px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+  height: 30px;
+  background-color: $form-color;
+  border-radius: 10px;
+  border: none;
+}
+textarea {
+  height: 90px;
+}
+.footerNav {
+  width: 40%;
+  float: left;
+}
+.contactSubmit {
+  display: block;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.socialIcons{
+  width: 40%;
+  float: right;
+}
+.socialIcons h5{
+  text-align: center;
+}
+.iconBorder {
+  border: 2px solid $accent-color;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.socialMediaIcon {
+  width: 52px;
+  height: 52px;
+  display: block;
+  margin: auto;
+  margin-top: 2px;
+>>>>>>> develop
 }
