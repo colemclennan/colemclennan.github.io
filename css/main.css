@@ -29,6 +29,9 @@ nav {
         color: #FFFFFF;
         background-color: #58595B; }
 
+.brandingLogo {
+  height: 80px; }
+
 #carouselExampleFade {
   max-height: 768px;
   min-width: auto; }
