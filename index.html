@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cantarell|Libre+Franklin|Noto+Serif" rel="stylesheet">
   </head>
   <body>
+    <!-- Nav Bar using bootstrap -->
     <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
       <a href="#" class="navbar-brand"><img src="images/mclennanPhotographyLogo.png" alt="mclennanPhotographyLogo" class="img-rounded center-block brandingLogo"></a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
@@ -34,6 +35,7 @@
         </ul>
       </div>
     </nav>
+    <!-- Crossfading carousel using the bootstrap component -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -56,15 +58,22 @@
   </a>
 </div>
 <hr class="fadingLine" />
+
+<!-- About Section -->
+
 <div class="About" id="aboutSection">
   <h2 class="aboutHeader">Cole McLennan</h2>
   <img src="images/aboutPhoto.jpg" alt="coleMclennanAboutPhoto" class="aboutPhoto">
+  <div class="aboutText">
   <p>       My name is Cole McLennan, I am an award winning photographer who has never shot a wedding before. I am currently studying at Algonquin College and plan to apply the techniques I have learned at your wedding. If this sounds like something you're interested in please reach out using the contact form at the bottom of the page.</p>
 
   <p>       I have been doing photography for over two years and have plenty of experience in different photography applications. Wedding photography is more than just taking photos. It's my belief that wedding photographers are there to help guide you along your day and ensure that it goes on without a hitch. If you were to hire me as your photographer, you wouldn't have to worry about the documentation of your day. Your mind can rest, as I can assure you I will beautifully capture the most special day of your lives.</p>
+  </div>
 </div>
+<div class="galleryTopper">
 <hr class="fadingLine" style="margin-top:20px;"/>
-<h2 class="galleryHeader"><a id="gallerySection">Gallery</a></h2>
+<h2 class="galleryHeader" id="gallerySection">Gallery</h2>
+</div>
 <div class="gallery">
   <img src="images/sladjana-karvounis-481774-unsplash.jpg" alt="Wedding Watch on Piano" class="galleryImage1">
   <img src="images/esther-tuttle-555247-unsplash.jpg" alt="ringOnRoses" class="galleryImage2">
@@ -78,7 +87,7 @@
   <a class="btn btn-outline-secondary gallerySeeMore" href="#" role="button">See More</a>
 </div>
 <hr class="fadingLine" />
-<h2 class="galleryHeader"><a id="packagesSection">Packages Include</a></h2>
+<h2 class="galleryHeader" id="packagesSection">Packages Include</h2>
 <div class="engagementPackage">
   <img src="images/engagementRing.png" alt="weddingRingLine">
   <h5>Engagement Shoot</h5>
@@ -95,7 +104,7 @@
   <p>It's my job to make sure that there isn't a moment missed that you'd like to remember. I will deliver hundreds of photos taken throughout the day, with a large focus on the main events during the day. I believe it's important to showcase all the wonderful people who are attending your wedding as well, and will do my best to deliver shots of as many guests as I can.</p>
 </div>
 <hr class="fadingLine" />
-<h2 class="galleryHeader"><a id="contactSection">Contact Me</a></h2>
+<h2 class="galleryHeader" id="contactSection">Contact Me</h2>
 <p class="contactInfo">To discuss anything regarding hiring me for your wedding please fill out the contact form below. If any of the text boxes dont apply to you feel free to leave them blank.</p>
 <p class="contactInfo"><span style="color:red;">*</span> required fields</p>
   <form>
@@ -120,6 +129,7 @@
 </div>
   </form>
 
+<!-- Submit Modal Pop-up -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
