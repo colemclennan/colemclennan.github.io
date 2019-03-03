@@ -82,7 +82,7 @@ nav {
   text-align: center; }
 
 .gallerySeeMore {
-  width: 20%;
+  width: 30%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px; }
@@ -161,3 +161,30 @@ textarea {
   display: block;
   margin: auto;
   margin-top: 2px; }
+
+@media (min-width: 768px) {
+  .carousel {
+    margin-bottom: px; }
+  .About {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px; }
+  .About img {
+    width: 40%;
+    display: inline-block;
+    float: left; }
+  .aboutText {
+    width: 50%;
+    display: inline-block;
+    margin-left: 60px;
+    float: right; }
+  .galleryTopper {
+    clear: both; } }
+
+@media (min-width: 1480px) {
+  .carousel {
+    margin-bottom: 100px; } }
+
+@media (min-width: 1700px) {
+  .carousel {
+    margin-bottom: 250px; } }
