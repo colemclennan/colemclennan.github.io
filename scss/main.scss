@@ -243,7 +243,9 @@ textarea {
   .contactBlock {
     clear:both;
   }
-
+  .iconsBox {
+    margin-left: 80px;
+  }
   }
 
 // Breakpoint for large width screens (desktop)
@@ -255,11 +257,13 @@ textarea {
   .aboutText {
     font-size: 1.0rem;
   }
-
+  .iconsBox {
+    margin-left: 100px;
+  }
   input, textarea {
     width: 60%;
   }
-  
+
 }
 
 @media (min-width: 1480px) {
@@ -283,6 +287,9 @@ textarea {
   }
   .aboutText {
     font-size: 1.2rem;
+  }
+  .iconsBox {
+    margin-left: 220px;
   }
 }
 

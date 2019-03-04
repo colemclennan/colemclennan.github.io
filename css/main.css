@@ -209,13 +209,17 @@ textarea {
   .engagementPackage p {
     text-align: left; }
   .contactBlock {
-    clear: both; } }
+    clear: both; }
+  .iconsBox {
+    margin-left: 80px; } }
 
 @media (min-width: 992px) {
   p {
     font-size: 1.0rem; }
   .aboutText {
     font-size: 1.0rem; }
+  .iconsBox {
+    margin-left: 100px; }
   input, textarea {
     width: 60%; } }
 
@@ -232,7 +236,9 @@ textarea {
     width: 30%;
     margin-left: 10%; }
   .aboutText {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .iconsBox {
+    margin-left: 220px; } }
 
 @media (min-width: 1700px) {
   .carousel {
