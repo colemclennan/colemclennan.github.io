@@ -18,19 +18,19 @@
       <div class="collapse navbar-collapse" id="navbarMenu">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link">HOME</a>
+            <a href="#" data-toggle:"collapse" data-target="#navbarMenu" class="nav-link">HOME</a>
           </li>
           <li class="nav-item">
-            <a href="#aboutSection" class="nav-link">ABOUT</a>
+            <a href="#aboutSection" data-toggle:"collapse" data-target="#navbarMenu" class="nav-link">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a href="#gallerySection" class="nav-link">GALLERY</a>
+            <a href="#gallerySection" data-toggle:"collapse" data-target="#navbarMenu" class="nav-link">GALLERY</a>
           </li>
           <li class="nav-item">
-            <a href="#packagesSection" class="nav-link">PACKAGES</a>
+            <a href="#packagesSection" data-toggle:"collapse" data-target="#navbarMenu" class="nav-link">PACKAGES</a>
           </li>
           <li class="nav-item">
-            <a href="#contactSection" class="nav-link">CONTACT</a>
+            <a href="#contactSection" data-toggle:"collapse" data-target="#navbarMenu" class="nav-link">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -83,9 +83,9 @@
   <img src="images/nathan-dumlao-576653-unsplash.jpg" alt="moodyCouple" class="galleryImage6">
   <img src="images/photo-1481068164146-e8beb686f4d2.jpeg" alt="bridesFloralBraid" class="galleryImage7">
 </div>
-<div class="galleryButton">
+<!-- <div class="galleryButton">
   <a class="btn btn-outline-secondary gallerySeeMore" href="#" role="button">See More</a>
-</div>
+</div> -->
 <hr class="fadingLine" />
 <h2 class="galleryHeader" id="packagesSection">Packages Include</h2>
 <div class="engagementPackage">
@@ -93,6 +93,7 @@
   <h5>Engagement Shoot</h5>
   <p>Spend a few hours with me in your favourite part of town. We'll roam around and take pictures in a variety of areas to ensure that there are shots that you'll love. My goal with this shoot is to get you excited about your wedding day, and confident that I'll deliver shots you'll love when that day comes.</p>
 </div>
+<div class="packages">
 <div class="engagementPackage">
   <img src="images/fullDayCoverage.png" alt="weddingRingLine">
   <h5>Full Day Coverage</h5>
@@ -103,6 +104,8 @@
   <h5>Hundreds of Photos</h5>
   <p>It's my job to make sure that there isn't a moment missed that you'd like to remember. I will deliver hundreds of photos taken throughout the day, with a large focus on the main events during the day. I believe it's important to showcase all the wonderful people who are attending your wedding as well, and will do my best to deliver shots of as many guests as I can.</p>
 </div>
+</div>
+<div class="contactBlock">
 <hr class="fadingLine" />
 <h2 class="galleryHeader" id="contactSection">Contact Me</h2>
 <p class="contactInfo">To discuss anything regarding hiring me for your wedding please fill out the contact form below. If any of the text boxes dont apply to you feel free to leave them blank.</p>
@@ -128,7 +131,7 @@
   <button type="submit" class="btn btn-secondary contactSubmit" data-toggle="modal" data-target="#exampleModal">Submit</button>
 </div>
   </form>
-
+</div>
 <!-- Submit Modal Pop-up -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -192,5 +195,11 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>$(document).ready(function () {
+    $(".navbar-nav li a").click(function(event) {
+      $(".navbar-collapse").collapse('hide');
+    });
+  });
+  </script>
   </body>
 </html>
